@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- title -->
+    <header id="title">
+      <h1>Reading Club Survey Form</h1>
+      <p id="description">Thank you!</p>
+    </header>
+
+    <!-- container -->
+    <main>
+      <form id="survey-form" action="index.html" method="post">
+
+        <!-- name -->
+        <label for="name" id="name-label">Name</label> <br>
+        <input type="text" name="name" placeholder="Enter your Name" id="name" required>
+        <br>
+
+        <!-- email -->
+        <label for="email" id="email-label">Email</label> <br>
+        <input type="email" name="email" placeholder="Enter your Email" id="email" required>
+        <br>
+
+        <!-- age -->
+        <label for="age" id="age-label">Age (optional)</label> <br>
+        <input type="number" name="age" id="number" min="1" max="99" placeholder="Enter your Age">
+        <br>
+
+        <!-- dropdown -->
+        <label for="role">Which option best describes your current role?</label> <br>
+        <select id="role"id="dropdown" placeholder="Select Current Role">
+          <option value="select">Select current role</option>
+          <option value="student">Student</option>
+          <option value="worker">Worker</option>
+          <option value="other">Other</option>
+        </select><br>
+
+        <!-- radio buttons -->
+        <div class="radio">
+          <label for="radio">Would you recommend Reading Club to a friend?</label><br>
+          <div class="radioyes">
+            <input type="radio" name="radio" value="yes">
+            <label for="yes">Yes</label>
+          </div><br>
+          <div class="radiono">
+            <input type="radio" name="radio" value="no">
+            <label for="no">No</label>
+          </div><br>
+          <div class="radiomaybe">
+            <input type="radio" name="radio" value="Maybe">
+            <label for="maybe">Maybe</label>
+          </div><br>
+        </div><br>
+
+        <!-- checkboxes -->
+        <div class="genre">
+          <label for="genre">What would you like to read more?</label><br>
+          <input type="checkbox" name="genre" value="nonfiction">
+          <label for="nonfiction">Nonfiction</label><br>
+          <input type="checkbox" name="genre" value="fiction">
+          <label for="fiction">Fiction</label><br>
+        </div>
+
+        <!-- comments field -->
+        <div class="comments">
+          <label id="commentlabel" for="comments">Any suggestion or comment?</label><br>
+          <textarea name="comments" placeholder="Enter your comments here"></textarea>
+        </div>
+
+        <!-- submit button -->
+        <input type="submit" name="submit" id="submit" placeholder="Submit">
+
+      </form>
+    </main>
+
+  </body>
+</html>
